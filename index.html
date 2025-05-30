@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>rootkitov :: Ethical Hacker & Security Researcher</title>
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Base */
+        body {
+            font: 14px/1.4 'Courier New', monospace;
+            background: #000;
+            color: #c9c9c9;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: normal;
+            color: #8a2be2;
+            margin-bottom: 15px;
+        }
+        
+        h1 { font-size: 2.2em; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        h2 { font-size: 1.6em; margin-top: 25px; }
+        h3 { font-size: 1.3em; color: #9370db; }
+        
+        a {
+            color: #9370db;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        a:hover {
+            color: #8a2be2;
+            text-shadow: 0 0 5px rgba(138, 43, 226, 0.7);
+        }
+        
+        /* Layout */
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        /* Components */
+        .console {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            padding: 15px;
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        .console:before {
+            content: "root@kali:~#";
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background: #000;
+            padding: 0 5px;
+            color: #8a2be2;
+            font-size: 12px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .card {
+            background: #0d0d0d;
+            border: 1px solid #333;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        
+        .card:hover {
+            border-color: #8a2be2;
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+        }
+        
+        .tool {
+            background: #0d0d0d;
+            border-left: 3px solid #8a2be2;
+            padding: 12px;
+            margin: 10px 0;
+        }
+        
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        
+        /* Animations */
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>rootkitov<span class="cursor">_</span></h1>
+            <p>Ethical Hacker | Security Researcher | Tool Developer</p>
+        </header>
+        
+        <section>
+            <h2>// about_me</h2>
+            <div class="console">
+                <p>Я профессиональный исследователь безопасности с более чем 2-летним опытом в области кибербезопасности. Специализируюсь на пентестинге веб-приложений, анализе уязвимостей и разработке специализированных инструментов для автоматизации задач безопасности.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>// skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Web Pentesting</h3>
+                    <p>XSS, SQLi, LFI/RFI, CSRF, SSRF, XXE и другие OWASP Top 10 уязвимости</p>
+                </div>
+                <div class="card">
+                    <h3>Intelligence</h3>
+                    <p>OSINT, GEOINT, CYBINT, HUMINT - сбор и анализ информации</p>
+                </div>
+                <div class="card">
+                    <h3>Network Security</h3>
+                    <p>Аудит WiFi, анализ сетевого трафика, MITM атаки</p>
+                </div>
+                <div class="card">
+                    <h3>Development</h3>
+                    <p>Python, Bash, HTML/CSS/JS - создание кастомных инструментов</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>// my_tools</h2>
+            
+            <div class="tool">
+                <h3>MUFFLER</h3>
+                <p>Собственный инструмент для аудита безопасности WiFi сетей. Работает на Raspberry Pi с прямым подключением к сетевому интерфейсу.</p>
+            </div>
+            
+            <div class="tool">
+                <h3>Metadata Extractor</h3>
+                <p>Утилита для анализа веб-ресурсов и извлечения метаданных (WHOIS, контакты владельцев, серверная информация).</p>
+            </div>
+            
+            <div class="tool">
+                <h3>@obfconsole_bot</h3>
+                <p>Telegram бот для продвинутой обфускации Python кода с поддержкой нескольких алгоритмов шифрования.</p>
+            </div>
+            
+            <div class="console">
+                <p>Имею множество других специализированных инструментов для тестирования безопасности. Большинство инструментов доступны в платной версии. Бесплатные утилиты можно найти в моем Telegram канале.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>// activities</h2>
+            <div class="console">
+                <p>Занимаюсь исследованием и нейтрализацией мошеннических ресурсов. Провожу этические атаки на фишинговые и вредоносные сайты. Разрабатываю инструменты для автоматизации задач безопасности.</p>
+                <p>Предоставляю консультации по защите веб-приложений и сетевой инфраструктуры.</p>
+            </div>
+        </section>
+        
+        <div class="contact">
+            <h3>// contacts</h3>
+            <p>Telegram: <a href="https://t.me/rootkitov" target="_blank">@rootkitov</a></p>
+            <p>Obfuscation Bot: <a href="https://t.me/obfconsole_bot" target="_blank">@obfconsole_bot</a></p>
+        </div>
+    </div>
+    
+    <script>
+        (function() {
+            // Typewriter effect
+            function typeWriter(el, speed) {
+                const text = el.textContent;
+                el.textContent = '';
+                
+                let i = 0;
+                function type() {
+                    if (i < text.length) {
+                        el.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    }
+                }
+                type();
+            }
+            
+            // Apply to console elements
+            const consoles = document.querySelectorAll('.console p');
+            consoles.forEach((el, idx) => {
+                setTimeout(() => {
+                    typeWriter(el, 10 + Math.random() * 20);
+                }, 300 * idx);
+            });
+            
+            // Random card highlight
+            setInterval(() => {
+                const cards = document.querySelectorAll('.card');
+                const randomCard = cards[Math.floor(Math.random() * cards.length)];
+                
+                randomCard.style.borderColor = '#8a2be2';
+                setTimeout(() => {
+                    randomCard.style.borderColor = '#333';
+                }, 1000);
+            }, 3000);
+        })();
+    </script>
+</body>
+</html>
